@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.masterkey-color {
+    color: black;
+}
+
+.supkey-color {
+    color: white;
+}
+
+.masterkey-bg {
+    background-color: #000;
+}
+
+.supkey-bg {
+    background-color: #fff;
+}
+
+/* start Nav bar */
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 50px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--masterkey-color);
+}
+
+a:hover {
+    background-color: #eee;
+}
+
+.app-logo a {
+    padding-left: 15px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.app-links {
+    display: flex;
+    gap: 10px;
+
+}
+.app-links a {
+    letter-spacing: 4px;
+}
+
+
+.perant {
+  margin: auto;
+  max-width: 1400px;
+ 
+}
+
+/* End Nav bar */
+
+
+/* start Header */
+
+.main-header {
+    position: relative;
+     height: auto; 
+}
+
+.main-header img {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-header .header-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   color: #eee;
+   font-size: 40px;
+   letter-spacing: 3px;
+   text-align: center;
+
+
+}
+ .header-text .header-title {
+    background-color: #000;
+    opacity: 0.85;
+    padding: 10px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    text-transform: uppercase;
+ }
+
+
+/* End Header */
+.perantt {
+    margin: auto;
+    max-width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+  }
+
+/* start article */
+.app-article .projects h3 {
+    padding-top: 60px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #eee;
+}
+
+.Projectss  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.Project {
+    position: relative;
+}
+.Project span {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding:  10px 15px;
+}
+.Project img {
+    width: 100%;
+}
+.about h3 {
+    padding-top: 60px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #eee;
+}
+.about p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.About {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+}
+
+.instructor img {
+  width: 100%;
+}
+
+.About p {
+    margin-top: 20px;
+    word-spacing: 1px;
+    letter-spacing: 0.95px;
+    line-height: 1.5;
+}
+ 
+.About h3,h4 {
+    margin-top: 10px;
+}
+.About h4 {
+    color: #cbc9c9;
+}
+.About button {
+    width: 100%;
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+button:hover {
+    background-color: rgb(206, 205, 205);
+}
+.Contact h3 {
+    padding-top: 60px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #eee;
+}
+.Contact p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+.contact-title input {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+}
+.contact-title button {
+    width: auto;
+    margin-top: 30px;
+    font-size: 17px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.contact-title button:hover {
+    background-color:  rgb(206, 205, 205);
+    color: #000;
+}
+.the-map img {
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+/* End article */
+
+/* start footer */
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.footer p {
+    color: white;
+    text-align: center;
+    margin: 25px;
+    background: none;
+    
+}
+.footer p a:hover {
+    color: rgb(3, 75, 3);
+
+}
+/* End footer */
+
+@media (max-width:800px) {
+    .About {
+        grid-template-columns: repeat(3,1fr);
+    } 
+ }
+@media (max-width:740px) {
+    .Projectss {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 670px) {
+    .header-title,.Architects {
+        font-size: 25px;
+    }
+}
+@media (max-width:630px) {
+    .About {
+        grid-template-columns: repeat(2,1fr);
+    } 
+ }
+@media (max-width:560px) {
+    .Projectss {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:540px) {
+    .navbar {
+        flex-direction: column;
+        align-items: inherit;
+        height: auto;
+    }
+    .app-logo {
+        margin-bottom: 15px;
+        
+    } 
+    .app-logo a {
+        padding-left: 0;
+    }  
+    .app-links {
+        flex-direction: column;
+        align-items: inherit;
+        height: auto;
+    }
+  
+    
+}
+
+ @media (max-width:450px) {
+    .About {
+        grid-template-columns:1fr;
+    } 
+ }
+ 
+@media (max-width:370px) {
+    .Projectss {
+        grid-template-columns: 1fr;
+    }
+  
+}
